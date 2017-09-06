@@ -1,0 +1,30 @@
+<div class="content is-large">
+<h1 class="title">Timer</h1><small class="timerTip">(Enter amount of time to wait...)</small>
+</div>
+<form id="timerForm" class="timerForm" [formGroup]="timerForm" (ngSubmit)="queTimer()">
+    <div class="section">
+        <div class="level">
+            <div class="level-item"> 
+                <small class="timerTip">Hours</small>
+            </div>
+            <div class="level-item"> 
+                <small class="timerTip">Minutes</small>
+            </div>
+            <div class="level-item"> 
+                <small class="timerTip">Seconds</small>
+            </div>                        
+        </div>
+        <div class="level">
+            <input formControlName="hours" type="datetime" class=" timerField level-item" placeholder="00" >
+            <p class="level-item">:</p>            
+            <input formControlName="minutes" type="datetime" class=" timerField level-item" placeholder="00" >
+            <p class="level-item">:</p>
+            <input formControlName="seconds" type="datetime" class=" timerField level-item" placeholder="00" >
+
+        </div>
+        <div class="hero is-small">
+            <input formControlName="title" class="input is-large" type="text" placeholder="Timer Name (optional)">
+            <button class="button is-primary"type="submit">Start Timer!</button>
+        </div>
+    </div>
+</form>

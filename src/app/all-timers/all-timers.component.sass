@@ -1,0 +1,24 @@
+.timeDisplay
+ font-size: 5vw
+ display: inline-block
+.menu
+ padding-left: 10%
+.timeDisplay
+ position: relative
+.timeDisplay
+ &:hover .overlay 
+  opacity: .7;
+.overlay
+ position: absolute
+ top: 0
+ bottom: 0
+ left: 0
+ right: 0
+ height: 100%
+ width: 100%
+ opacity: 0
+ transition: .5s ease
+ background-color: #fff
+.overlay span
+ size: 200
+ margin-left: 50%

@@ -1,0 +1,8 @@
+  <aside class="menu">
+    <p class="menu-label title is-3"> <span class="icon is-large"> <i class="fa fa-globe"></i></span> Global
+    <ul class="menu-list">
+      <li *ngFor="let clock of clocks"><p class="menu-label">{{clock.name}}</p>
+          <a class="time">{{clock.time}} </a>
+      </li>
+    </ul>
+  </aside>
