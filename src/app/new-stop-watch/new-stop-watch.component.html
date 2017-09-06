@@ -1,0 +1,18 @@
+<div class="timeDisplay">
+  <p class="title is-1">{{StopWatch.value}}</p>
+  <div class="overlay">
+    <div class="columns">
+      <div (click)="StopWatch.start()"class="column">
+        <span class="icon picon is-large"><i class="fa fa-play"></i></span>
+      </div>
+      <div (click)="StopWatch.stop()" class="column">
+        <span class="icon picon is-large"><i class="fa fa-pause"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+<button (click)="StopWatch.reset()" class="reset button is-large is-primary">
+     <span class="icon is-large"><i class="fa fa-refresh"></i></span>
+</button>
+
+

@@ -4,7 +4,13 @@
       <app-global></app-global>
     </article>
     <article class="column is-5">
-      <app-new-timer></app-new-timer>
+      <div class="tabs">
+        <ul>
+          <li routerLinkActive="is-active" [routerLink]="['time']"><a>Timer</a></li>
+          <li routerLinkActive="is-active" [routerLink]="['watch']"><a>Stop Watch</a></li>
+        </ul>
+      </div>
+    <router-outlet></router-outlet>
     </article>
     <article class="column is-5">
       <app-all-timers></app-all-timers>

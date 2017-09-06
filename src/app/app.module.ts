@@ -12,11 +12,14 @@ import { GlobalComponent } from './global/global.component';
 import { AllTimersComponent } from './all-timers/all-timers.component';
 import { NavComponent } from './nav/nav.component';
 import { TimePipe } from './time.pipe';
+import { NewStopWatchComponent } from './new-stop-watch/new-stop-watch.component';
 
 const routes: Routes = [
   {path : 'landing', component: LandingPageComponent},
   {path : 'timer', component: TimerDisplayComponent, children: [
-    { path : 'new', component: NewTimerComponent}
+    {path: '', redirectTo: 'time', pathMatch: 'full'},
+    { path : 'time', component: NewTimerComponent},
+    { path : 'watch', component: NewStopWatchComponent},
   ]},
   { path: '', redirectTo: 'timer', pathMatch: 'full'},
   { path: '**', redirectTo: '/' }
@@ -30,7 +33,8 @@ const routes: Routes = [
     GlobalComponent,
     AllTimersComponent,
     NavComponent,
-    TimePipe
+    TimePipe,
+    NewStopWatchComponent
   ],
   imports: [
     BrowserModule,

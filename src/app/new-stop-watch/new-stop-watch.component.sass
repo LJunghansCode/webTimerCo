@@ -1,0 +1,32 @@
+.title
+ font-size: 10vw
+ text-align: center
+.overlay
+ position: absolute
+ top: 0
+ bottom: 0
+ left: 0
+ right: 0
+ height: 100%
+ width: 100%
+ opacity: 0
+ transition: .5s ease
+ background-color: #fff
+.overlay span
+ size: 200
+ margin-left: 50%
+.timeDisplay
+ &:hover .overlay 
+  opacity: .7;
+.timeDisplay
+ position: relative
+.picon
+ &:hover
+  -ms-transform: scale(1.3, 1.3)
+  -webkit-transform: scale(1.3, 1.3)
+  transform: scale(1.3, 1.3)
+  transition: all .3s
+.reset
+ width: 100%
+.picon
+ margin-top: 20%

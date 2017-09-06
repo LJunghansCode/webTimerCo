@@ -1,8 +1,7 @@
 <div class="menu">
-  <p class="menu-label title is-3">Your Timers</p>
+  <p class="menu-label title is-3"> <span class="icon is-large"> <i class="fa fa-list"></i></span> Your Timers </p>
   <ul class="menu-list">
     <li *ngFor="let timer of myTimers; let i = index" [ngClass]="timerToPop(i)">
-      <progress class="progress is-warning" value="30" max="100"></progress>
       <p class="menu-label">{{timer.title}}</p>
       <a class="timeDisplay is-primary">
         {{timer.length | time}}
